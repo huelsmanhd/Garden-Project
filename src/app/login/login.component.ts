@@ -11,11 +11,25 @@ import { GardenService } from "../garden.service";
 })
 export class LoginComponent implements OnInit {
 
+
   adminLogin: FormGroup;
 
-  constructor(private gardenService: GardenService) { }
+  constructor(
+    private gardenService: GardenService,
+    private fb: FormBuilder
+    ) { }
 
   ngOnInit() {
+    this.adminLogin = this.fb.group({
+      email: new FormControl(),
+      password: new FormControl()
+    })
   }
+
+  login() {
+    console.log(this.adminLogin.value);
+  }
+
+
 
 }
