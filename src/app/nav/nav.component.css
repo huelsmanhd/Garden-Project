@@ -1,0 +1,22 @@
+.navbar {
+    flex: 1 1 auto;
+}
+
+.toolbar {
+    position: relative;
+}
+
+.logo {
+    width: 8vw;
+    height: 8vh;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+}
+
+.btns {
+    justify-content: right;
+    float: right;
+}
