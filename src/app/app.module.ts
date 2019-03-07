@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     AboutComponent,
     ProductsComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     HttpClientModule,
