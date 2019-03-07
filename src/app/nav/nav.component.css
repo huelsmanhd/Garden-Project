@@ -1,10 +1,12 @@
 .toolbar {
-    position: relative;
+    background-color: rgba(123, 123, 123, 0.5);
+    text-align: right;
+
 }
 
 .logo {
-    width: 7vw;
-    height: 14vh;
+    width: 5vw;
+    height: 7vh;
 }
 
 .title {
@@ -12,7 +14,7 @@
     position: relative;
 }
 
-.btns {
-    justify-content: right;
-    float: right;
+.btns a {
+    margin: 1em;
+    color: black;
 }
