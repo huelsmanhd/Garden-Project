@@ -1,5 +1,9 @@
+.navbar {
+    flex: 1 1 auto;
+}
+
 .toolbar {
-  display: inline-flex;
+    position: relative;
 }
 
 .logo {
@@ -9,9 +13,10 @@
 
 .title {
     text-align: center;
+    position: relative;
 }
 
 .btns {
     justify-content: right;
-    flex: auto;
+    float: right;
 }
