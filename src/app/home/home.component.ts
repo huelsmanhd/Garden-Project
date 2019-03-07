@@ -6,14 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  title = 'Garden Store'
+  title = 'Goth Gardens'
   constructor() { }
 
   ngOnInit() {
   }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> aa8d4a571be9904596e7efbb91768b55a8d47707

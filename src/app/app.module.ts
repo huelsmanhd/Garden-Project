@@ -11,9 +11,6 @@ import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { LoginComponent } from './login/login.component';
-<<<<<<< HEAD
-import { HomeComponent } from './home/home.component';
-=======
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
@@ -22,7 +19,6 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 
 
->>>>>>> aa8d4a571be9904596e7efbb91768b55a8d47707
 
 @NgModule({
   declarations: [
@@ -30,10 +26,6 @@ import { HomeComponent } from './home/home.component';
     NavComponent,
     AboutComponent,
     ProductsComponent,
-<<<<<<< HEAD
-    // HttpClientModule,
-=======
->>>>>>> aa8d4a571be9904596e7efbb91768b55a8d47707
     LoginComponent,
     HomeComponent
   ],
