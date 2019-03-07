@@ -1,5 +1,11 @@
-.toolbar {
-    position: relative;
+.btns a {
+    padding: 1em;
+    margin: .5em;
+    color: black;
+}
+
+.toolbar span {
+    flex: 1 1 auto;
 }
 
 .logo {
@@ -10,9 +16,4 @@
 .title {
     text-align: center;
     position: relative;
-}
-
-.btns {
-    justify-content: right;
-    float: right;
 }

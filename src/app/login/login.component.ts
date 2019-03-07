@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, FormControl } from "@angular/forms";
 import { GardenService } from "../garden.service";
 
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -16,6 +15,6 @@ export class LoginComponent implements OnInit {
   constructor(private gardenService: GardenService) { }
 
   ngOnInit() {
-  }
+    }
 
 }
