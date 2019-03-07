@@ -26,6 +26,7 @@ import { HomeComponent } from './home/home.component';
     NavComponent,
     AboutComponent,
     ProductsComponent,
+    // HttpClientModule,
     LoginComponent,
     HomeComponent
   ],
