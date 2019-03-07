@@ -1,0 +1,17 @@
+.toolbar {
+  display: inline-flex;
+}
+
+.logo {
+    width: 8vw;
+    height: 8vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.btns {
+    justify-content: right;
+    flex: auto;
+}
