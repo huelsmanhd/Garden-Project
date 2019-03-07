@@ -39,7 +39,7 @@ import { FormsModule } from '@angular/forms';
     MatIconModule, 
     MatSidenavModule, 
     MatListModule,
-    
+    FormsModule
   ],
   providers: [GardenService],
   bootstrap: [AppComponent]
