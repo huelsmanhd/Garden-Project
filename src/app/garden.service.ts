@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Admin } from "./models/adminModel";
+// import { map } from "rxjs"
 
 
 const httpOptions = {
@@ -14,6 +15,9 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class GardenService {
+  adminURL = `https://efa-gardenapp-backend.herokuapp.com/api/auth/login`;
+
+  sessionToken: string = "";
 
   constructor(private http: HttpClient) { }
 
@@ -21,8 +25,15 @@ export class GardenService {
     return this.http.get(`https://efa-gardenapp-backend.herokuapp.com/api/product`);
   }
 
-  // userLogin() {
-  //   return this.http.post<Admin>(`https://efa-gardenapp-backend.herokuapp.com/api/auth/login`);
+  // userLogin(adminLogin) {
+  //   return this.http.post<any>(`${this.adminURL}`, { adminLogin })
+  //   .pipe(user=> {
+  //     if(user && user.token) {
+  //       localStorage.setItem({token: user.token});
+  //       this.sessionToken = user.token;
+  //       console.log(this.sessionToken);
+  //     }
+  //   })
   // }
 
 }
