@@ -13,8 +13,8 @@ export class NavComponent implements OnInit {
 
   sessionToken: string = "";
 
-  logout = true;
-
+  logout=true;
+  products = <any>[];
   ngOnInit() {
   }
 
@@ -27,7 +27,8 @@ export class NavComponent implements OnInit {
 
   logOut() {
     sessionStorage.clear();
-    this.logout = !this.logout;
+    
+    
   }
 
 
