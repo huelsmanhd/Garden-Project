@@ -15,7 +15,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
 import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule } from '@angular/material';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 
 
@@ -26,7 +26,6 @@ import { HomeComponent } from './home/home.component';
     NavComponent,
     AboutComponent,
     ProductsComponent,
-    // HttpClientModule,
     LoginComponent,
     HomeComponent
   ],
@@ -42,7 +41,8 @@ import { HomeComponent } from './home/home.component';
     MatIconModule, 
     MatSidenavModule, 
     MatListModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [GardenService],
   bootstrap: [AppComponent]
