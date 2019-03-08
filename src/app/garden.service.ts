@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Admin } from "./models/adminModel";
-import { map } from "rxjs"
+// import { map } from "rxjs"
 
 
 const httpOptions = {
@@ -23,6 +23,11 @@ export class GardenService {
 
   products() {
     return this.http.get(`https://efa-gardenapp-backend.herokuapp.com/api/product`);
+  }
+
+  setSessionToken(token) {
+    this.sessionToken = token;
+    console.log(this.sessionToken)
   }
 
   // userLogin(adminLogin) {
