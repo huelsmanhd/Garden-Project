@@ -4,7 +4,7 @@
     position: relative;
     padding-top: 200px;
     padding-bottom: 200px;
-    overflow: hidden;
+    overflow: scroll;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -20,4 +20,10 @@
 .parallax1 img {
     width: 100%;
     height: 100%;
+}
+
+#paraText {
+    width: 70%;
+    height: 100%;
+    text-align: left;
 }
