@@ -8,7 +8,7 @@
     <a class="about" routerLink="/about">About</a>
     <a class="login" routerLink="/login">Login</a>
   </span>
-  <div *ngIf="logout">
+  <div *ngIf="logoutView()">
     <a class="logout" (click)="logOut()">Logout</a>
   </div>
 </mat-toolbar>

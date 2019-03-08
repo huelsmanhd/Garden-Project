@@ -16,7 +16,13 @@ export class NavComponent implements OnInit {
   logout = true;
 
   ngOnInit() {
-    
+  }
+
+  logoutView() {
+    if(this.gardenService.sessionToken === '')
+      return this.logout = false;
+    else
+      return this.logout = true;
   }
 
   logOut() {
