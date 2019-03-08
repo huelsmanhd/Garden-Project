@@ -11,6 +11,11 @@
 form {
     margin: 1rem;
 }
+
+form input {
+    background-color: rgb(31, 31, 31);
+    color: rgb(184, 183, 183);
+}
 .parallax1 {
     background-image: url("../../assets/download.jpeg");
     height: 95vh;
@@ -22,5 +27,9 @@ form {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.btn {
+    background-color: black !important;
+    border: red !important;
 }
 

@@ -24,5 +24,9 @@
 }
 
 .toolbar {
-    background-color: black;
+    background-color: rgb(29, 29, 29);
+}
+
+.logout {
+    color: rgb(199, 199, 199);
 }
