@@ -18,7 +18,6 @@ export class ProductsComponent implements OnInit {
     this.gardenService.products().subscribe(data => {
       // console.log(data);
       this.products = data;
-      console.log(this.products)
     })
   }
 
