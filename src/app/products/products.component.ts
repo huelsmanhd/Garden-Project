@@ -23,8 +23,11 @@ export class ProductsComponent implements OnInit {
 
   showDelete() {
     if(this.gardenService.sessionToken === '')
+      
       return this.isLoggedIn = false;
+      
     else
+      // this.ngOnInit();
       return this.isLoggedIn = true;
   };
 
