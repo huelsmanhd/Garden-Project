@@ -1,0 +1,14 @@
+<mat-toolbar class="toolbar">
+  <span>
+    <img class="logo" alt="Garden Store Logo" src="../../assets/81bf6345-f149-4206-93d2-1810a9b05018.png"/>
+  </span>
+  <span class="btns">
+    <a class="home" routerLink="/home">Home</a>
+    <a class="products" routerLink="/products">Products</a>
+    <a class="about" routerLink="/about">About</a>
+    <a class="login" routerLink="/login">Login</a>
+  </span>
+  <div *ngIf="logoutView()">
+    <a class="logout" (click)="logOut()">Logout</a>
+  </div>
+</mat-toolbar>

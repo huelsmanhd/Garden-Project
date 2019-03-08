@@ -1,0 +1,35 @@
+.container {
+    width: 30%;
+    background-color: rgba(74, 74, 74, 0.5);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+/* .container input {
+    width: 80%;
+    margin: auto;
+} */
+form {
+    margin: 1rem;
+}
+
+form input {
+    background-color: rgb(31, 31, 31);
+    color: rgb(184, 183, 183);
+}
+.parallax1 {
+    background-image: url("../../assets/download.jpeg");
+    height: 95vh;
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn {
+    background-color: black !important;
+    border: red !important;
+}
+
