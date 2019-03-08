@@ -11,6 +11,7 @@ import { GardenService } from "../garden.service";
 export class ProductsComponent implements OnInit {
 
   products = <any>[];
+  isLoggedIn = true;
 
   constructor(private gardenService: GardenService) { }
 
@@ -21,6 +22,12 @@ export class ProductsComponent implements OnInit {
     })
   }
 
+  showDelete() {
+    if(this.gardenService.sessionToken === '')
+      return this.isLoggedIn = false;
+    else
+      return this.isLoggedIn = true;
+  };
 
   delete(product) {
     let token = this.gardenService.sessionToken;
