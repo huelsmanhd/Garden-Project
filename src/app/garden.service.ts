@@ -25,6 +25,11 @@ export class GardenService {
     return this.http.get(`https://efa-gardenapp-backend.herokuapp.com/api/product`);
   }
 
+  setSessionToken(token) {
+    this.sessionToken = token;
+    console.log(this.sessionToken)
+  }
+
   // userLogin(adminLogin) {
   //   return this.http.post<any>(`${this.adminURL}`, { adminLogin })
   //   .pipe(user=> {
