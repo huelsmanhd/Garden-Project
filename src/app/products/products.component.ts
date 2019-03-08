@@ -16,8 +16,27 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
     this.gardenService.products().subscribe(data => {
-      // console.log(data);
+      console.log(data);
       this.products = data;
     })
   }
-}
+
+
+  delete(product) {
+    let token = this.gardenService.sessionToken;
+    console.log(product);
+    console.log(token)
+    fetch(`https://efa-gardenapp-backend.herokuapp.com/api/product/${product}`, {
+      method:"DELETE",
+      body: JSON.stringify({ log: {id: product}
+      }),
+      headers: new Headers({
+        "Content-Type": "application/json",
+        "Authorization": token
+      })
+    })
+    .then(res => res.json())
+    .then(() => this.ngOnInit());
+    
+  }
+  }
