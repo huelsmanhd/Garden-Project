@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, Router } from '@angular/router';
 import { GardenService } from "../garden.service";
 
 @Component({
@@ -9,7 +9,7 @@ import { GardenService } from "../garden.service";
 })
 export class NavComponent implements OnInit {
 
-  constructor(private gardenService: GardenService) { }
+  constructor(private gardenService: GardenService, private router: Router) { }
 
   sessionToken: string = "";
 
@@ -27,7 +27,7 @@ export class NavComponent implements OnInit {
 
   logOut() {
     sessionStorage.clear();
-    
+    this.router.navigate([""])
     
   }
 
