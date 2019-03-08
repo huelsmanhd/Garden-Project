@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { GardenService } from "../garden.service";
 
 @Component({
   selector: 'app-nav',
@@ -8,9 +9,18 @@ import { Routes, RouterModule } from '@angular/router';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gardenService: GardenService) { }
+
+  sessionToken: string = "";
+
+  logout = true;
 
   ngOnInit() {
+    this.gardenService.sessionToken === "" ? this.logout === false : this.logout === true;
+  }
+
+  logOut() {
+    sessionStorage.clear();
   }
 
 }

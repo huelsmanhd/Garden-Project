@@ -1,7 +1,11 @@
-.toolbar {
-    background-color: rgba(123, 123, 123, 0.5);
-    text-align: right;
+.btns a {
+    padding: 1em;
+    margin: .5em;
+    color: black;
+}
 
+.toolbar span {
+    flex: 1 1 auto;
 }
 
 .logo {

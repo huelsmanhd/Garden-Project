@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { About } from '../about';
+// import { Contact } from '../contact';
 
 @Component({
   selector: 'app-about',
